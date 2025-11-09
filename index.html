@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCorp Training Portal</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS -->
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Welcome to TechCorp Training Portal</h1>
+            <p>Upgrade your skills with our comprehensive training programs!</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Training Overview Section -->
+        <section id="overview">
+            <div class="container">
+                <h2>Training Overview</h2>
+                <p>Choose your training modules below or submit a personalized suggestion.</p>
+            </div>
+        </section>
+
+        <!-- Training Modules Section -->
+        <section id="training-modules">
+            <div class="container">
+                <h2>Available Training Modules</h2>
+                <div class="module">
+                    <h3>Full Credit (4-hour Training)</h3>
+                    <p>In-depth, comprehensive workshops.</p>
+                    <button onclick="signUp('Full Credit')">Sign Up</button>
+                </div>
+                <div class="module">
+                    <h3>Half Credit (2-hour Training)</h3>
+                    <p>Short and impactful sessions.</p>
+                    <button onclick="signUp('Half Credit')">Sign Up</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personal Training Suggestion Form -->
+        <section id="personal-training">
+            <div class="container">
+                <h2>Suggest Your Personal Training</h2>
+                <form id="suggestion-form">
+                    <label for="training-title">Training Title:</label>
+                    <input type="text" id="training-title" name="training-title" required>
+                    <br>
+                    <label for="training-description">Training Description:</label>
+                    <textarea id="training-description" name="training-description" required></textarea>
+                    <br>
+                    <button type="submit">Submit Training Idea</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Calendar Section -->
+        <section id="calendar">
+            <div class="container">
+                <h2>Upcoming Training Sessions</h2>
+                <div id="calendar-container"></div>
+            </div>
+        </section>
+
+        <!-- Sign Up/Log In Section -->
+        <section id="login-signup">
+            <div class="container">
+                <h2>Join Us Today!</h2>
+                <p>New user or want to access the portal? Click below to sign up or log in.</p>
+                <button onclick="window.location.href='signup.html'">Sign Up / Log In</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>For more details, contact us at <a href="mailto:comments@techcorp.com">comments@techcorp.com</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to the external JS -->
+</body>
+</html>
